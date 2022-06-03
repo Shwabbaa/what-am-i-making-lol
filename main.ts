@@ -23,20 +23,21 @@ function blockUntilInput() {
 
     // show something funny
     basic.showLeds(`
-    . . # . .
-    . # . # .
-    . . . # .
+    . # # # .
+    # . . . #
+    . . # # .
     . . . . .
     . . # . .
     `)
 
     while (true) {
         if (input.buttonIsPressed(Button.A)) {
+            basic.clearScreen()
             return true
         } else if (input.buttonIsPressed(Button.B)) {
+            basic.clearScreen()
             return false
         }
     }
 
-    basic.clearScreen()
 }
