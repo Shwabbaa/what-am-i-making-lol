@@ -38,4 +38,5 @@ function blockUntilInput() {
         }
     }
 
+    basic.clearScreen()
 }
